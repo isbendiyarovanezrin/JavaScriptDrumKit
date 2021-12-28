@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: url(../img/background.jpg) center/cover no-repeat;
+  background: url(../img/background.jpg) center/cover no-repeat #ffd700;
   overflow: hidden;
 }
 
