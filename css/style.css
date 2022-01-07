@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   cursor: none;
   box-sizing: border-box;
 }
@@ -29,7 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 10rem;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   transition: all 0.1s ease;
   border: 0.3rem solid #000000e1;
   background-color: #272727bf;

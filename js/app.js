@@ -1,3 +1,5 @@
+"use strict";
+
 window.addEventListener("keydown", function (i) {
   const key = document.querySelector(`.key[data-key="${i.key}"]`);
   const audio = document.querySelector(`audio[data-key="${i.key}"]`);
@@ -15,12 +17,14 @@ function removeStyle() {
 }
 
 // cursor
-let cursor = document.getElementById("cursor");
+const cursor = document.getElementById("cursor");
 
-document.addEventListener("mousemove", (e) => {
-  let x = e.pageX;
-  let y = e.pageY;
+document.addEventListener("mousemove", changeCursor);
+
+function changeCursor(e) {
+  const x = e.pageX;
+  const y = e.pageY;
 
   cursor.style.left = `${x}px`;
   cursor.style.top = `${y}px`;
-});
+}
