@@ -1,8 +1,8 @@
 "use strict";
 
-window.addEventListener("keydown", function (i) {
-  const key = document.querySelector(`.key[data-key="${i.key}"]`);
-  const audio = document.querySelector(`audio[data-key="${i.key}"]`);
+window.addEventListener("keydown", function (e) {
+  const key = document.querySelector(`.key[data-key="${e.key}"]`);
+  const audio = document.querySelector(`audio[data-key="${e.key}"]`);
   if (!audio) return;
   audio.currentTime = 0;
   audio.play();

@@ -1,3 +1,14 @@
+:root {
+  --primary-font-family: sans-serif;
+  --secondary-font-family: cursive;
+  --body-color: #ffd700;
+  --bg-color: #272727bf;
+  --border-color: #000000e1;
+  --white-color: #fffffff1;
+  --yellow-color: #ffd700;
+  --shadow-color: #ffd900b6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +23,8 @@ html {
 }
 
 body {
-  background: url(../img/background.jpg) center/cover no-repeat #ffd700;
+  background: url(../img/background.jpg) center/cover no-repeat
+    var(--body-color);
   overflow: hidden;
 }
 
@@ -33,26 +45,26 @@ body {
   width: 10rem;
   border-radius: 0.4rem;
   transition: all 0.1s ease;
-  border: 0.3rem solid #000000e1;
-  background-color: #272727bf;
+  border: 0.3rem solid var(--border-color);
+  background-color: var(--bg-color);
 }
 
 kbd {
-  font: 3.5rem cursive;
-  color: #fffffff1;
+  font: 3.5rem var(--secondary-font-family);
+  color: var(--white-color);
 }
 
 .sound {
-  color: #ffd700;
+  color: var(--yellow-color);
   text-transform: uppercase;
-  font: 1.3rem sans-serif;
+  font: 1.3rem var(--primary-font-family);
   padding-bottom: 1rem;
 }
 
 .playing {
   transform: scale(1.1);
-  border: 0.4rem solid #ffd700;
-  box-shadow: 0.1rem 0.1rem 1rem #ffd900b6;
+  border: 0.4rem solid var(--yellow-color);
+  box-shadow: 0.1rem 0.1rem 1rem var(--shadow-color);
 }
 
 #cursor {
@@ -63,8 +75,8 @@ kbd {
   z-index: 100;
   transition: all 0.1s linear;
   pointer-events: none;
-  border: 0.2rem solid #ffd700;
-  box-shadow: 0 0 0.2rem #ffd900b6;
+  border: 0.2rem solid var(--yellow-color);
+  box-shadow: 0 0 0.2rem var(--shadow-color);
   background-color: transparent;
 }
 
