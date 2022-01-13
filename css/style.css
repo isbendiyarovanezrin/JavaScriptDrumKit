@@ -151,7 +151,7 @@ kbd {
   width: 0.9rem;
   top: 35.5%;
   left: 35.5%;
-  background: transparent;
+  background-color: transparent;
   border: 0.2rem solid var(--yellow-color);
 }
 
