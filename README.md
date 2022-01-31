@@ -1,4 +1,11 @@
-<a href="https://isbendiyarovanezrin.github.io/JavaScriptDrumKit">
+<div align="center">
 
-![slice](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&text=JavaScript&fontAlign=76&rotate=13&fontAlignY=19&desc=Drum%20Kit&descAlign=77.&descAlignY=40 "Click me!🥁")
-</a>
+### JavaScript Drum Kit🥁
+
+###### You can view the project [here](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit "Click me!🥁").
+
+##### Screenshot
+
+![Drum Kit screenshot](https://i.postimg.cc/m2FBDmxg/dk.png)
+
+</div>
