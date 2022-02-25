@@ -1,6 +1,6 @@
 <div align="center">
 
-### JavaScript Drum Kit🥁
+#### JavaScript Drum Kit🥁
 
 ###### You can view the project [here](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit "Click me!🥁").
 
