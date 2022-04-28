@@ -1,6 +1,6 @@
 :root {
-  --primary-font-family: sans-serif;
-  --secondary-font-family: cursive;
+  --primary-font-family: "Open Sans", sans-serif;
+  --secondary-font-family: "Short Stack", cursive;
   --body-color: #ffd700;
   --bg-color: #272727bf;
   --loader-bg-color: #060606;
@@ -33,6 +33,10 @@ body {
   overflow: hidden;
 }
 
+#container {
+  padding: 0.5rem;
+}
+
 .keys {
   display: flex;
   align-items: center;
@@ -62,17 +66,30 @@ kbd {
 .sound {
   color: var(--yellow-color);
   text-transform: uppercase;
-  font: 1.3rem var(--primary-font-family);
+  font: 500 1.3rem var(--primary-font-family);
   padding-bottom: 1rem;
 }
 
-.playing {
+.playing,
+.key:active {
   transform: scale(1.1);
-  border: 0.4rem solid var(--yellow-color);
-  box-shadow: 0.1rem 0.1rem 1rem var(--shadow-color);
+  border: 0.3rem solid var(--yellow-color);
+  box-shadow: 0 0 2rem var(--shadow-color);
 }
 
-/* cursor */
+.mobile {
+  font: 4rem var(--primary-font-family);
+  color: var(--yellow-color);
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+/* cursor start */
 #cursor {
   position: absolute;
   border-radius: 50%;
@@ -85,8 +102,9 @@ kbd {
   box-shadow: 0 0 0.2rem var(--shadow-color);
   background-color: transparent;
 }
+/* cursor end */
 
-/* loader */
+/* loader start */
 .cssload-container {
   width: 100vw;
   height: 100vh;
@@ -165,16 +183,6 @@ kbd {
   }
 }
 
-@-o-keyframes cssload-spinR {
-  from {
-    -o-transform: rotate(0deg);
-  }
-
-  to {
-    -o-transform: rotate(360deg);
-  }
-}
-
 @-ms-keyframes cssload-spinR {
   from {
     -ms-transform: rotate(0deg);
@@ -195,16 +203,6 @@ kbd {
   }
 }
 
-@-moz-keyframes cssload-spinR {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
 @keyframes cssload-spinL {
   from {
     transform: rotate(0deg);
@@ -212,16 +210,6 @@ kbd {
 
   to {
     transform: rotate(-360deg);
-  }
-}
-
-@-o-keyframes cssload-spinL {
-  from {
-    -o-transform: rotate(0deg);
-  }
-
-  to {
-    -o-transform: rotate(-360deg);
   }
 }
 
@@ -244,20 +232,15 @@ kbd {
     -webkit-transform: rotate(-360deg);
   }
 }
+/* loader end */
 
-@-moz-keyframes cssload-spinL {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(-360deg);
-  }
-}
-
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1007px) {
   html {
     font-size: 7px;
+  }
+
+  .mobile {
+    display: block;
   }
 }
 
@@ -269,6 +252,6 @@ kbd {
 
 @media screen and (max-width: 460px) {
   html {
-    font-size: 3.1px;
+    font-size: 3.3px;
   }
 }
