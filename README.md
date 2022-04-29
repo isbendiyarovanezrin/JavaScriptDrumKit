@@ -1,11 +1,11 @@
 <div align="center">
 
-#### JavaScript Drum Kit🥁
+#### JavaScript [Drum Kit](https://youtu.be/FqJdzYY_Fas "Click me! 🥁") 🥁
 
-###### You can view the project [here](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit "Click me!🥁").
+###### You can view the project [here](https://isbendiyarovanezrin.github.io/JavaScriptDrumKit "Click me! 🥁").
 
 ##### Screenshot
 
-![Drum Kit screenshot](https://i.postimg.cc/m2FBDmxg/dk.png)
+!["Drum kit" project screenshot](https://i.postimg.cc/m2FBDmxg/dk.png)
 
 </div>
